@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://jvpiloni:qXEhfh1e4ys4NtMn@mapper.dsepe.mongodb.net/?retryWrites=true&w=majority');
 
+
 // simple route
 app.get("/", (req, res) => { 
   res.json({ message: "Welcome to application." }); 
